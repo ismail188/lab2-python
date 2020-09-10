@@ -26,7 +26,7 @@ def getLetterGrade():
     rg = "D"
   elif grade < 60.0:
     g = "F"
-  print(F"Your letter grade for CMPSC 131 is {g}. ")
+  print(F"Your letter grade for CMPSC 131 is {g}.")
 def run():
   getLetterGrade()
   
