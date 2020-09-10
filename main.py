@@ -6,29 +6,29 @@
 # Section: 011R
 # Breakout: 4
 
-def getLetterGrade():
-  grade = float(input("Enter your CMPSC 131 grade: "))
+def getLetterGrade(grade):
   if grade>= 93.0:
-    g = "A"
+    grade = "A"
   elif grade >= 90.0:
-    g = "A-"
+    grade = "A-"
   elif grade >= 87.0:
-    g = "B+"
+    grade = "B+"
   elif grade >= 83.0:
-    g = "B"
+    grade = "B"
   elif grade >= 80.0:
-    g = "B-"
+    grade = "B-"
   elif grade >= 77.0:
-    g = "C+"
+    grade = "C+"
   elif grade >= 70.0:
-    g = "C"
+    grade = "C"
   elif grade >= 60.0:
-    rg = "D"
+    grade = "D"
   elif grade < 60.0:
-    g = "F"
-  print(F"Your letter grade for CMPSC 131 is {g}.")
-def run():
-  getLetterGrade()
+    grade = "F"
   
+def run():
+  grade = float(input("Enter your CMPSC 131 grade: "))
+  getLetterGrade(grade)
+  print(F"Your letter grade for CMPSC 131 is {grade}.")
 if __name__ == "__main__":
   run()
